@@ -9,7 +9,8 @@ export default function Navbar() {
     </div>
     <div className="flex align-center w-full justify-center gap-4 items-center bg-white font-bold text-lg">
         <Link to="/">Home</Link> 
-        <Link to="/about">About</Link>
+        <Link to="/menu">Menu</Link>
+        <Link>About</Link>
         <Link to="/order">Order</Link> {/* TODO create Order component  */}
     </div>
     </>

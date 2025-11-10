@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div 
-    className="flex flex-col justify-center items-center lg:h-200 font-bold text-4xl"
+    className="flex flex-col justify-center items-center lg:h-180 font-bold text-4xl"
     style={{ 
       backgroundImage: `url(${cafe})`, 
       backgroundSize: 'cover', 
@@ -24,7 +24,7 @@ export default function Home() {
         cursorCharacter="|"
         className="text-green-200 mt-10 lg:text-4xl text-2xl"
       />
-    <CircularGallery bend={3} textColor="black" borderRadius={0.05} scrollEase={0.02}/>
+    <CircularGallery bend={3} className="text-green-200" borderRadius={0.05} scrollEase={0.02}/>
     </div>
 
     <div className="flex flex-col lg:flex-row gap-4 w-full justify-evenly items-center lg:items-start h-100">
