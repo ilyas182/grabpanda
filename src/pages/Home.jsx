@@ -4,7 +4,6 @@ import './Home.css'
 import CircularGallery from '../components/CircularGallery'
 import ScrollAnimation from '../components/ScrollAnimation'
 
-
 export default function Home() {
   return (
     <>
