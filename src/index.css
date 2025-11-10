@@ -1,0 +1,11 @@
+/* Pacifico font utility class */
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}

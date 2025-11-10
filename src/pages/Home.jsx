@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div 
-    className="flex flex-col justify-center items-center h-150 font-bold text-4xl"
+    className="flex flex-col justify-center items-center lg:h-200 font-bold text-4xl"
     style={{ 
       backgroundImage: `url(${cafe})`, 
       backgroundSize: 'cover', 
@@ -22,31 +22,21 @@ export default function Home() {
         pauseDuration={1500}
         showCursor={true}
         cursorCharacter="|"
-        className="text-green-200 mt-10"
+        className="text-green-200 mt-10 lg:text-4xl text-2xl"
       />
     <CircularGallery bend={3} textColor="black" borderRadius={0.05} scrollEase={0.02}/>
     </div>
 
-    <div className="flex flex-row gap-4 w-full justify-evenly">
-    <ScrollAnimation animation="slideRight" once={false} duration={2} className="p-8">
-        <h1 className="text-4xl font-bold">Scroll animation</h1>
-        <p className="text-lg">Dine with us</p>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Click me</button>
-        <div className="bg-red-500 w-10 h-10"></div>
-        <div className="bg-green-500 w-10 h-10"></div>
-        <div className="bg-yellow-500 w-10 h-10"></div>
-        <div className="bg-purple-500 w-10 h-10"></div>
-        <div className="bg-orange-500 w-10 h-10"></div>
+    <div className="flex flex-col lg:flex-row gap-4 w-full justify-evenly items-center lg:items-start">
+    <ScrollAnimation animation="slideRight" once={false} duration={2} className="p-8 lg:w-1/2  " delay={0.8}>
+        <h1 className="text-4xl font-bold font-pacifico text-green-400">Dine with us</h1>
+        <p className="text-lg font-pacifico text-gray-400">Experience the best dining experience with us</p>
+        <p className="font-merriweather text-gray-700">Enjoy the fresh air and ambiance of our outdoor area or enjoy a comfortable and climate-controlled dining experience within our indoor area, paired with impeccable service that ensures every moment of your visit is perfect.</p>
     </ScrollAnimation>
-    <ScrollAnimation animation="slideLeft" once={false} duration={2} className="p-8">
-        <h1 className="text-4xl font-bold">Scroll animation</h1>
-        <p className="text-lg">Picture here</p>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Click me</button>
-        <div className="bg-red-500 w-10 h-10"></div>
-        <div className="bg-green-500 w-10 h-10"></div>
-        <div className="bg-yellow-500 w-10 h-10"></div>
-        <div className="bg-purple-500 w-10 h-10"></div>
-        <div className="bg-orange-500 w-10 h-10"></div>
+    <ScrollAnimation animation="slideLeft" once={false} duration={2} className="p-8 lg:w-1/2" delay={0.8}>
+        <img src="https://images.pexels.com/photos/3534750/pexels-photo-3534750.jpeg?cs=srgb&dl=pexels-adrien-olichon-1257089-3534750.jpg&fm=jpg"
+        className="lg:w-3/4 lg:h-3/4 w-full h-full rounded-lg"
+        alt="Dine with us"></img>
     </ScrollAnimation>
     </div>
     </>
