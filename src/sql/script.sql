@@ -4,10 +4,10 @@
 -- * TABLES
 
 DROP TABLE IF EXISTS menu;
+DROP TABLE IF EXISTS order_item;
 DROP TABLE IF EXISTS menu_item;
 DROP TABLE IF EXISTS menu_subcategory;
 DROP TABLE IF EXISTS menu_category;
-DROP TABLE IF EXISTS order_item;
 DROP TABLE IF EXISTS payment;
 DROP TABLE IF EXISTS payment_method;
 DROP TABLE IF EXISTS `orders`;
@@ -93,7 +93,7 @@ INSERT INTO menu_category VALUES
 INSERT INTO menu_subcategory VALUES
 (1, 'Hot Beverages', 1),
 (2, 'Cold Beverages', 1),
-(3, 'Fruit Juices', 1)
+(3, 'Fruit Juices', 1),
 (4, 'Salads', 2),
 (5, 'Soups', 2),
 (6, 'Finger Food', 2),
@@ -122,3 +122,8 @@ INSERT INTO customer VALUES
 (1, 'ilyas', 'ilyas2104@gmail.com', '123456'),
 (2, 'taufiq', 'taufiqrahmat095@gmail.com', '123456')
 
+-- harlequin -a mysql -h localhost -p 3306 -U ilyas --password 210494 --database grabpanda
+-- select * from customer;
+-- select * from menu_category;
+-- select * from menu_subcategory;
+-- select * from menu_item;
